@@ -33,6 +33,14 @@ Run it on the [lightning cloud](lightning.ai) with:
 lightning run app wine_reviews_qdrant/app.py --cloud
 ```
 
+**This is important to provide the Kaggle credentials. For the cloud deployment
+the file might not be an option, so they might be overwritten with environmental
+variables like that:**
+
+```bash
+lightning run app wine_reviews_qdrant/app.py --cloud --env KAGGLE_USERNAME=kaggle_username --env KAGGLE_KEY=kaggle_key
+```
+
 ## to test and link
 
 Run flake to make sure all your styling is consistent (it keeps your team from going insane)
